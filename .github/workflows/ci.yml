@@ -21,4 +21,6 @@ jobs:
       env:
         CC_TEST_REPORTER_ID: d39be4a39c29db7e92d36b84dd0abd5fdc122da07eb8ad4e7fea3ed8eeff83d0
       with:
+        debug: true
         coverageCommand: go test -v -coverprofile=cover.out -race ./...
+        coverageLocations: ${{github.workspace}}/cover.out:gocov
