@@ -6,6 +6,29 @@ on:
     tags:
       - '!*' # Do not execute on tags
 jobs:
+  setsha:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Get commit SHA
+      shell: bash
+      run: echo "GIT_COMMIT_SHA=$(echo ${GITHUB_SHA})" >> $GITHUB_ENV
+    - name: Debug
+      run: echo ${{ env.GIT_COMMIT_SHA }}
+  setbranch:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Get branch name (merge)
+      if: github.event_name != 'pull_request'
+      shell: bash
+      run: echo "GIT_BRANCH=$(echo ${GITHUB_REF#refs/heads/} | tr / -)" >> $GITHUB_ENV
+
+    - name: Get branch name (pull request)
+      if: github.event_name == 'pull_request'
+      shell: bash
+      run: echo "GIT_BRANCH=$(echo ${GITHUB_HEAD_REF} | tr / -)" >> $GITHUB_ENV
+
+    - name: Debug
+      run: echo ${{ env.GIT_BRANCH }}
   coverage:
     runs-on: ubuntu-latest
     steps:
@@ -16,7 +39,6 @@ jobs:
         go-version: 1.15.x
     - name: Checkout code
       uses: actions/checkout@v2
-    - uses: FranzDiebold/github-env-vars-action@v1.2.0
     - name: Report to CodeClimate
       uses: paambaati/codeclimate-action@v2.7.4
       env:
