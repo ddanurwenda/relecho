@@ -12,7 +12,7 @@ gen:
 build: gen
 	go build -o bin/api ./cmd/api
 test: gen
-	go test -race ./...
+	go test -coverprofile=cover.out -race ./...
 start:
 	export $$(cat .env | grep -v ^\# | xargs) && ./bin/api
 docker:
