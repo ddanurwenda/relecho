@@ -1,8 +1,8 @@
 # go-todo-backend
 
-[![GoDoc](https://godoc.org/github.com/Fs02/go-todo-backend?status.svg)](https://godoc.org/github.com/Fs02/go-todo-backend)
+[![GoDoc](https://godoc.org/danurwenda.com/relecho?status.svg)](https://godoc.org/danurwenda.com/relecho)
 [![Build Status](https://travis-ci.com/Fs02/go-todo-backend.svg?branch=master)](https://travis-ci.com/Fs02/go-todo-backend)
-[![Go Report Card](https://goreportcard.com/badge/github.com/Fs02/go-todo-backend)](https://goreportcard.com/report/github.com/Fs02/go-todo-backend)
+[![Go Report Card](https://goreportcard.com/badge/danurwenda.com/relecho)](https://goreportcard.com/report/danurwenda.com/relecho)
 [![Maintainability](https://api.codeclimate.com/v1/badges/d506b5b2df687cbcd358/maintainability)](https://codeclimate.com/github/Fs02/go-todo-backend/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/d506b5b2df687cbcd358/test_coverage)](https://codeclimate.com/github/Fs02/go-todo-backend/test_coverage)
 

@@ -3,7 +3,7 @@ package handler
 import (
 	"net/http"
 
-	"github.com/Fs02/go-todo-backend/scores"
+	"danurwenda.com/relecho/scores"
 	"github.com/go-chi/chi"
 	"github.com/go-rel/rel"
 )

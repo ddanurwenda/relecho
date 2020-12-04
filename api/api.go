@@ -1,9 +1,9 @@
 package api
 
 import (
-	"github.com/Fs02/go-todo-backend/api/handler"
-	"github.com/Fs02/go-todo-backend/scores"
-	"github.com/Fs02/go-todo-backend/todos"
+	"danurwenda.com/relecho/api/handler"
+	"danurwenda.com/relecho/scores"
+	"danurwenda.com/relecho/todos"
 	"github.com/go-chi/chi"
 	chimid "github.com/go-chi/chi/middleware"
 	"github.com/go-rel/rel"

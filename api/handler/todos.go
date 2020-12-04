@@ -8,7 +8,7 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/Fs02/go-todo-backend/todos"
+	"danurwenda.com/relecho/todos"
 	"github.com/go-chi/chi"
 	"github.com/go-rel/rel"
 	"github.com/go-rel/rel/where"

@@ -6,9 +6,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/Fs02/go-todo-backend/api/handler"
-	"github.com/Fs02/go-todo-backend/todos"
-	"github.com/Fs02/go-todo-backend/todos/todostest"
+	"danurwenda.com/relecho/api/handler"
+	"danurwenda.com/relecho/todos"
+	"danurwenda.com/relecho/todos/todostest"
 	"github.com/go-rel/rel/reltest"
 	"github.com/go-rel/rel/where"
 	"github.com/stretchr/testify/assert"

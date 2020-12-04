@@ -1,5 +1,5 @@
 export RELEASE_VERSION	?= $(shell git show -q --format=%h)
-export DOCKER_REGISTRY	?= docker.pkg.github.com/fs02/go-todo-backend
+export DOCKER_REGISTRY	?= docker.pkg.danurwenda.com/relecho
 export DEPLOY			?= api
 
 all: build start
@@ -10,9 +10,9 @@ db-rollback:
 gen:
 	go generate ./...
 build: gen
-	go build -mod=vendor -o bin/api ./cmd/api
+	go build -o bin/api ./cmd/api
 test: gen
-	go test -mod=vendor -race ./...
+	go test -race ./...
 start:
 	export $$(cat .env | grep -v ^\# | xargs) && ./bin/api
 docker:
