@@ -8,5 +8,6 @@ require (
 	github.com/goware/cors v1.1.1
 	github.com/lib/pq v1.9.0
 	github.com/stretchr/testify v1.6.1
+	github.com/vektra/mockery/v2 v2.3.0 // indirect
 	go.uber.org/zap v1.16.0
 )
