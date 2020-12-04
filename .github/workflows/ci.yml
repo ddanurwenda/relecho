@@ -18,10 +18,8 @@ jobs:
       uses: actions/checkout@v2
     - name: Calc coverage
       run: |
-        go test -v -covermode=count -coverprofile=cover.
+        go test -v -covermode=count -coverprofile=cover.out ./...
     - name: Report to CodeClimate
       uses: paambaati/codeclimate-action@v2.7.4
       env:
         CC_TEST_REPORTER_ID: d39be4a39c29db7e92d36b84dd0abd5fdc122da07eb8ad4e7fea3ed8eeff83d0
-      with:
-        coverageCommand: go test -coverprofile=cover.out -race ./...
