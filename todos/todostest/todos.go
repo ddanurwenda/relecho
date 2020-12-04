@@ -3,7 +3,7 @@ package todostest
 import (
 	context "context"
 
-	todos "danurwenda.com/relecho/todos"
+	todos "github.com/ddanurwenda/relecho/todos"
 	rel "github.com/go-rel/rel"
 	mock "github.com/stretchr/testify/mock"
 )

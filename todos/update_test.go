@@ -4,7 +4,7 @@ import (
 	"context"
 	"testing"
 
-	"danurwenda.com/relecho/scores/scorestest"
+	"github.com/ddanurwenda/relecho/scores/scorestest"
 	"github.com/go-rel/rel"
 
 	"github.com/go-rel/rel/reltest"

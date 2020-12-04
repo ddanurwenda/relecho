@@ -3,7 +3,7 @@ package handler
 import (
 	"net/http"
 
-	"danurwenda.com/relecho/scores"
+	"github.com/ddanurwenda/relecho/scores"
 	"github.com/go-chi/chi"
 	"github.com/go-rel/rel"
 )

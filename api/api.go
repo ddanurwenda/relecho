@@ -1,9 +1,9 @@
 package api
 
 import (
-	"danurwenda.com/relecho/api/handler"
-	"danurwenda.com/relecho/scores"
-	"danurwenda.com/relecho/todos"
+	"github.com/ddanurwenda/relecho/api/handler"
+	"github.com/ddanurwenda/relecho/scores"
+	"github.com/ddanurwenda/relecho/todos"
 	"github.com/go-chi/chi"
 	chimid "github.com/go-chi/chi/middleware"
 	"github.com/go-rel/rel"

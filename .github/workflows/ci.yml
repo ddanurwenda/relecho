@@ -23,4 +23,3 @@ jobs:
       with:
         debug: true
         coverageCommand: go test -v -coverprofile=cover.out -race ./...
-        coverageLocations: ${{github.workspace}}/cover.out:gocov

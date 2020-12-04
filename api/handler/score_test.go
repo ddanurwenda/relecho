@@ -5,8 +5,8 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"danurwenda.com/relecho/api/handler"
-	"danurwenda.com/relecho/scores"
+	"github.com/ddanurwenda/relecho/api/handler"
+	"github.com/ddanurwenda/relecho/scores"
 	"github.com/go-rel/rel/reltest"
 	"github.com/stretchr/testify/assert"
 )

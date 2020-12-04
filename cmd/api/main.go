@@ -10,7 +10,7 @@ import (
 	"syscall"
 	"time"
 
-	"danurwenda.com/relecho/api"
+	"github.com/ddanurwenda/relecho/api"
 	"github.com/go-rel/rel"
 	"github.com/go-rel/rel/adapter/postgres"
 	_ "github.com/lib/pq"

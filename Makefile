@@ -1,5 +1,5 @@
 export RELEASE_VERSION	?= $(shell git show -q --format=%h)
-export DOCKER_REGISTRY	?= docker.pkg.danurwenda.com/relecho
+export DOCKER_REGISTRY	?= docker.pkg.github.com/ddanurwenda/relecho
 export DEPLOY			?= api
 
 all: build start

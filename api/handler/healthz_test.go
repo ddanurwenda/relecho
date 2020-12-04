@@ -7,7 +7,7 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"danurwenda.com/relecho/api/handler"
+	"github.com/ddanurwenda/relecho/api/handler"
 	"github.com/stretchr/testify/assert"
 )
 

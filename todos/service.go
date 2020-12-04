@@ -3,7 +3,7 @@ package todos
 import (
 	"context"
 
-	"danurwenda.com/relecho/scores"
+	"github.com/ddanurwenda/relecho/scores"
 	"github.com/go-rel/rel"
 	"go.uber.org/zap"
 )
